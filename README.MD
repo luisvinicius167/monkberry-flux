@@ -2,6 +2,10 @@
 [![npm package](https://img.shields.io/badge/npm-0.0.1-blue.svg)](https://www.npmjs.com/package/monkberry-flux)
 > A Reactive library for Monkberry applications or any Javascript application, inspired by Flux.
 
+<pre align="center">
+  <a href="https://monkberry.js.org" target="_blank"><img src="https://avatars0.githubusercontent.com/u/13010941?v=3&s=200"/></a>
+</pre>
+
 ### Why monkberry-flux?
 **monkberry-flux** is a reactive library that provides for your application multiple stores, wich each store manage your state.
 
@@ -14,9 +18,10 @@
 
 ### Install
 * Npm: ``` npm install monkberry-flux ```
+* CDN: `https://unpkg.com/monkberry-flux@0.0.1`
 
 ### Reasons for use
-* Tiny size: ~1kb
+* Tiny size: 900b
 * Best Performance
 * Reactive Stores
 * Simple and minimalistic API
