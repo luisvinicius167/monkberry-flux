@@ -44,7 +44,7 @@ A **Store** is basically a container that holds your application state. There ar
 Creating a Store is pretty straightforward - just provide an name, state and actions:
 
 ```javascript
-import monkberry-flux from "monkberry-flux";
+import monkberryFlux from "monkberry-flux";
 
 const TodoStore = monkberryFlux.createStore({
   name: 'Todo',
