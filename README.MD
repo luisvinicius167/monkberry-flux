@@ -71,6 +71,27 @@ TodoStore.observe( templates => {
 module.exports = TodoStore;
 ```
 
+### Template:
+On your template, you can register methods and subscribe your template for when the store state change, your template can update with the new state. 
+
+```javascript
+import Template from './main.monk';
+import TodoStore from 'stores/todo';
+
+export default class extends Template {
+  constructor(){
+    super();
+    super.update(TodoStore.getState());
+    TodoStore.subscribe(this);
+    this.on('click', '#change', this.changeName)
+  }
+
+  changeName(){
+    TodoStore.dispatch('name', 'CHANGE_NAME', 'Luis Vincius');
+  }
+}
+```
+
 #### State
 Application state is held in the store, as a single object. **monkberry-flux** uses a **single state tree** - that is, this single object contains all your Store level state and serves as the *"single source of truth"*.
 
