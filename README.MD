@@ -75,6 +75,7 @@ module.exports = TodoStore;
 On your template, you can register methods and subscribe your template for when the store state change, your template can update with the new state. 
 
 ```javascript
+// templates/main/main.js
 import Template from './main.monk';
 import TodoStore from 'stores/todo';
 
